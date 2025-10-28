@@ -2,9 +2,11 @@ package ru.qa.lessons.lesson_4.zoo;
 
 public class Cat extends Animal {
     private boolean isFull = false;
+    private int foodNeeded;
 
-    public Cat(String name) {
+    public Cat(String name, int foodNeeded) {
         super(name, 200, 0);
+        this.foodNeeded = foodNeeded;
     }
 
     public boolean isFull() {
@@ -17,7 +19,6 @@ public class Cat extends Animal {
             return;
         }
 
-        int foodNeeded = (int) (Math.random() * 11) + 10; // 10-20
         if (bowl.getFoodAmount() >= foodNeeded) {
             bowl.reduceFood(foodNeeded);
             isFull = true;

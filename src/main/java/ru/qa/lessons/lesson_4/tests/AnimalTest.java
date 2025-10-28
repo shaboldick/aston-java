@@ -8,10 +8,10 @@ public class AnimalTest {
         FoodBowl bowl = new FoodBowl(50);
 
         Cat[] cats = {
-                new Cat("Мурзик"),
-                new Cat("Барсик"),
-                new Cat("Рыжик"),
-                new Cat("Пушок")
+                new Cat("Мурзик", 15),
+                new Cat("Барсик", 20),
+                new Cat("Рыжик", 12),
+                new Cat("Пушок", 18)
         };
 
         System.out.println("=== Кормим котов ===");
